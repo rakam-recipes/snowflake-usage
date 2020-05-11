@@ -37,8 +37,10 @@
   dimensions: {
     credits_used: {
       column: 'CREDITS_USED',
+      type: 'double',
     },
     credits_used_usd: {
+      type: 'double',
       sql: '{{dimension.credits_used}} * 2.5',
       reportOptions: {
         suffix: '$',
@@ -46,16 +48,15 @@
     },
     start_time: {
       column: 'START_TIME',
-      timeframes: [],
       type: 'timestamp',
     },
     end_time: {
       column: 'END_TIME',
-      timeframes: [],
       type: 'timestamp',
     },
     warehouse_name: {
       column: 'WAREHOUSE_NAME',
+      type: 'string',
     },
     is_prior_month_mtd: {
       type: 'boolean',
