@@ -54,7 +54,7 @@
           },
           columnOptions: null,
         },
-        defaultDateRange: 'P14D',
+
         limit: 1000,
         filters: [],
         orders: null,
@@ -112,7 +112,7 @@
           },
           columnOptions: null,
         },
-        defaultDateRange: 'P14D',
+
         limit: 1000,
         filters: [],
         orders: null,
@@ -147,7 +147,7 @@
           },
           columnOptions: null,
         },
-        defaultDateRange: 'P14D',
+
         limit: 1000,
         filters: [],
         orders: null,

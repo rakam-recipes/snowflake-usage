@@ -2,7 +2,6 @@
   name: 'snowflake_storage_metrics',
   target: { database: 'SNOWFLAKE', schema: 'ACCOUNT_USAGE', table: 'TABLE_STORAGE_METRICS' },
   category: 'Snowflake Data-warehouse',
-
   measures: {
     average_storage_tb: {
       aggregation: 'average',
@@ -27,13 +26,12 @@
     },*/
   },
   dimensions: {
-    database_id: {
-      column: 'TABLE_CATALOG_ID',
-    },
     deleted: {
+      type: 'timestamp',
       column: 'DELETED',
     },
     table_catalog: {
+      type: 'string',
       column: 'TABLE_CATALOG',
     },
     /*usage: {
@@ -41,18 +39,23 @@
       timeframes: [],
     },*/
     storage_bytes: {
+      type: 'long',
       column: 'ACTIVE_BYTES',
     },
     failsafe_bytes: {
+      type: 'long',
       column: 'FAILSAFE_BYTES',
     },
     storage_tb: {
+      type: 'long',
       sql: '{{dimension.storage_bytes}} / power(1024,4) ',
     },
     failsafe_tb: {
+      type: 'long',
       sql: '{{dimension.failsafe_bytes}} / power(1024,4) ',
     },
     total_tb: {
+      type: 'long',
       sql: '{{dimension.storage_tb}} + {{dimension.failsafe_tb}}',
     },
   },

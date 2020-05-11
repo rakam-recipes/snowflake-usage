@@ -8,31 +8,32 @@
     },
   },
   dimensions: {
-    id: {
-      column: 'DATABASE_ID',
-    },
     comment: {
       column: 'COMMENT',
+      description: 'Comment for this database',
+      type: 'string',
     },
     created: {
       column: 'CREATED',
-      timeframes: [],
+      type: 'timestamp',
     },
     database_name: {
       column: 'DATABASE_NAME',
+      type: 'string',
     },
     database_owner: {
       column: 'DATABASE_OWNER',
-    },
-    deleted: {
-      column: 'DELETED',
+      type: 'string',
     },
     is_transient: {
+      type: 'string',
+      description: 'Whether this is a transient database',
       column: 'IS_TRANSIENT',
     },
     last_altered: {
       column: 'LAST_ALTERED',
-      timeframes: [],
+      type: 'timestamp',
+      description: 'Last altered time of the database',
     },
   },
 }
