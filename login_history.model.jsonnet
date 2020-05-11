@@ -45,6 +45,7 @@
     },
     first_authentication_factor: {
       column: 'FIRST_AUTHENTICATION_FACTOR',
+      type: 'string',
       description: 'Method used to authenticate the user (the first factor, if using multi factor authentication).',
     },
     is_success: {
