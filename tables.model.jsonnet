@@ -71,6 +71,7 @@
     },
     table_owner: {
       column: 'TABLE_OWNER',
+      type: 'string',
     },
     table_schema: {
       column: 'TABLE_SCHEMA',
