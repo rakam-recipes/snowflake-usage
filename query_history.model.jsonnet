@@ -68,6 +68,7 @@
     },
     query_context: {
       hidden: true,
+      type: 'string',
       sql: "PARSE_JSON(regexp_substr(regexp_substr({{TABLE}}.query_text, 'Query\\sContext\\s\\'\\{.*\\}\\''),'\\{.*}'))",
     },
     database_name: {
