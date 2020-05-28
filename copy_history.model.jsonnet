@@ -1,5 +1,6 @@
 {
-  name: 'copy_history',
+  name: 'snowflake_copy_history',
+  category: 'Snowflake Data-warehouse',
   target: {
     database: 'SNOWFLAKE',
     schema: 'ACCOUNT_USAGE',
