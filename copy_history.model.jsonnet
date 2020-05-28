@@ -132,27 +132,22 @@
       type: 'double',
     },
     sum_of_row_count: {
-      column: 'row_count',
+      column: 'ROW_COUNT',
       aggregation: 'sum',
       type: 'double',
     },
     sum_of_row_parsed: {
-      column: 'row_parsed',
+      column: 'ROW_PARSED',
       aggregation: 'sum',
       type: 'double',
     },
     sum_of_file_size: {
-      column: 'file_size',
+      column: 'FILE_SIZE',
       aggregation: 'sum',
       type: 'double',
     },
     sum_of_error_count: {
-      column: 'error_count',
-      aggregation: 'sum',
-      type: 'double',
-    },
-    sum_of_error_limit: {
-      column: 'error_limit',
+      column: 'ERROR_COUNT',
       aggregation: 'sum',
       type: 'double',
     },
