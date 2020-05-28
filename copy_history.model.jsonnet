@@ -6,7 +6,9 @@
     schema: 'ACCOUNT_USAGE',
     table: 'COPY_HISTORY',
   },
-  mappings: {},
+  mappings: {
+    eventTimestamp: 'last_load_time',
+  },
   dimensions: {
     file_name: {
       label: 'FILE_NAME',
