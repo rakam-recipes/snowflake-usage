@@ -6,9 +6,9 @@
     pipe_usage: {
       relationType: 'oneToOne',
       joinType: 'leftJoin',
-      modelName: 'snowflake_pipe_usage',
-      sourceColumn: 'start_time',
-      targetColumn: 'start_time',
+      model: 'snowflake_pipe_usage',
+      source: 'start_time',
+      target: 'start_time',
     },
   },
   mappings: {

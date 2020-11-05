@@ -20,44 +20,23 @@
       h: 2,
       w: 3,
       component: 'r-segmentation-chart',
-      type: 1,
+      type: 'segmentation',
       reportOptions: {
-        modelName: 'snowflake_pipe_usage',
+        model: 'snowflake_pipe_usage',
         dimensions: [
           {
             name: 'start_time',
-            modelName: 'snowflake_pipe_usage',
-            relationName: null,
-            postOperation: {
-              type: 'timestamp',
-              value: 'day',
-            },
+            timeframe: 'day',
           },
         ],
         measures: [
-          {
-            name: 'total_credits_used_usd',
-            modelName: 'snowflake_pipe_usage',
-            relationName: null,
-          },
+          'total_credits_used_usd',
         ],
         reportOptions: {
           chartOptions: {
             type: 'area',
-            showLabels: true,
-            showLegend: true,
-            interactive: true,
-            columnOptions: [],
           },
-          tableOptions: {
-            columnOptions: [],
-          },
-          columnOptions: null,
         },
-
-        limit: 1000,
-        filters: [],
-        orders: null,
       },
     },
     {
@@ -68,54 +47,25 @@
       h: 2,
       w: 6,
       component: 'r-segmentation-table',
-      type: 1,
+      type: 'segmentation',
       reportOptions: {
-        modelName: 'snowflake_pipe_usage',
+        model: 'snowflake_pipe_usage',
         dimensions: [
           {
             name: 'end_time',
-            modelName: 'snowflake_pipe_usage',
-            relationName: null,
-            postOperation: {
-              type: 'timestamp',
-              value: 'day',
-            },
+            timeframe: 'day',
           },
         ],
         measures: [
-          {
-            name: 'total_bytes_inserted',
-            modelName: 'snowflake_pipe_usage',
-            relationName: null,
-          },
-          {
-            name: 'total_files_inserted',
-            modelName: 'snowflake_pipe_usage',
-            relationName: null,
-          },
-          {
-            name: 'total_credits_used_usd',
-            modelName: 'snowflake_pipe_usage',
-            relationName: null,
-          },
+          'total_bytes_inserted',
+          'total_files_inserted',
+          'total_credits_used_usd',
         ],
         reportOptions: {
           chartOptions: {
             type: 'area',
-            showLabels: true,
-            showLegend: true,
-            interactive: true,
-            columnOptions: [],
           },
-          tableOptions: {
-            columnOptions: [],
-          },
-          columnOptions: null,
         },
-
-        limit: 1000,
-        filters: [],
-        orders: null,
       },
     },
     {
@@ -126,31 +76,13 @@
       h: 1,
       w: 2,
       component: 'r-number',
-      type: 1,
+      type: 'segmentation',
       reportOptions: {
-        modelName: 'snowflake_storage_metrics',
+        model: 'snowflake_storage_metrics',
         dimensions: [],
         measures: [
-          {
-            name: 'billable_tb',
-            modelName: 'snowflake_storage_metrics',
-            relationName: null,
-          },
+          'billable_tb',
         ],
-        reportOptions: {
-          chartOptions: {
-            type: null,
-            columnOptions: [],
-          },
-          tableOptions: {
-            columnOptions: [],
-          },
-          columnOptions: null,
-        },
-
-        limit: 1000,
-        filters: [],
-        orders: null,
       },
     },
   ],
